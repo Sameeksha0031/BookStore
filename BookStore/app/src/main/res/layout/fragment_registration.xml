@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/sign_in_fragment"
-    tools:context=".view.LoginFragment">
+    tools:context=".view.RegistrationFragment">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -24,7 +24,7 @@
             android:layout_height="45dp"
             android:text="Registration"
             android:layout_width="wrap_content"
-            android:textColor="@color/dark_brick"
+            android:textColor="@color/brick_red"
             android:textSize="25sp"
             android:textStyle="italic"/>
 
@@ -86,7 +86,7 @@
             android:textAlignment="center"
             android:textSize="20dp"
             android:text="Submit"
-            android:textColor="@color/blue_300"
+            android:textColor="@color/teal_700"
             android:textStyle="bold"
             android:background="@drawable/custom_edit_text"
             android:layout_gravity="center"

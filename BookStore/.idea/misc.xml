@@ -3,12 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/aszkv/AndroidStudioProjects/BookStore/app/src/main/res/drawable/custom_edit_text.xml" value="0.219" />
-        <entry key="..\:/Users/aszkv/AndroidStudioProjects/BookStore/app/src/main/res/drawable/custom_image.xml" value="0.1615" />
-        <entry key="..\:/Users/aszkv/AndroidStudioProjects/BookStore/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1615" />
-        <entry key="..\:/Users/aszkv/AndroidStudioProjects/BookStore/app/src/main/res/drawable/login_background.xml" value="0.219" />
-        <entry key="..\:/Users/aszkv/AndroidStudioProjects/BookStore/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/aszkv/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_login.xml" value="0.2203125" />
+        <entry key="..\:/Users/aszkv/AndroidStudioProjects/Bookstore/app/src/main/res/drawable/custom_background.xml" value="0.155" />
+        <entry key="..\:/Users/aszkv/AndroidStudioProjects/Bookstore/app/src/main/res/drawable/custom_edit_text.xml" value="0.155" />
+        <entry key="..\:/Users/aszkv/AndroidStudioProjects/Bookstore/app/src/main/res/drawable/custom_image.xml" value="0.155" />
+        <entry key="..\:/Users/aszkv/AndroidStudioProjects/Bookstore/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.155" />
+        <entry key="..\:/Users/aszkv/AndroidStudioProjects/Bookstore/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.155" />
+        <entry key="..\:/Users/aszkv/AndroidStudioProjects/Bookstore/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/aszkv/AndroidStudioProjects/Bookstore/app/src/main/res/layout/fragment_registration.xml" value="0.22826086956521738" />
       </map>
     </option>
   </component>
