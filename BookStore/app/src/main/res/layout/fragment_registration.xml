@@ -8,7 +8,7 @@
     tools:context=".view.RegistrationFragment">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/registration"
         android:layout_width="301dp"
         android:layout_height="561dp"
         android:background="@color/white"
@@ -81,6 +81,7 @@
             tools:layout_editor_absoluteY="116dp" />
 
         <TextView
+            android:id="@+id/submit_button_registration"
             android:layout_height="wrap_content"
             android:layout_width="100dp"
             android:textAlignment="center"
