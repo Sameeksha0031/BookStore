@@ -41,8 +41,8 @@ class LoginFragment : Fragment() {
         }
 
         binding.notHaveAccount.setOnClickListener{
-            var frgament = RegistrationFragment()
-            fragmentManager?.beginTransaction()?.replace(R.id.fragment_activity_container,frgament)?.commit()
+            var fragment = RegistrationFragment()
+            fragmentManager?.beginTransaction()?.replace(R.id.fragment_activity_container,fragment)?.commit()
         }
 
         binding.forgotPassword.setOnClickListener{
@@ -87,7 +87,7 @@ class LoginFragment : Fragment() {
             if(it.status){
                 Toast.makeText(context,it.msg, Toast.LENGTH_SHORT).show()
             }else{
-                Toast.makeText(context,it.msg, Toast.LENGTH_SHORT).show()
+                Toast.makeText(context,"Login Fail",Toast.LENGTH_SHORT).show()
             }
         })
     }
@@ -95,7 +95,7 @@ class LoginFragment : Fragment() {
     private fun forgotPassword(userEmail: EditText) {
         var userName = ""
         var userPassword = ""
-        val user = User(userId = "", userName = "userName", userEmail = userEmail.text.toString(), userPassword =  "userPassword")
+        val user = User(userId = "", userName = userName, userEmail = userEmail.text.toString(), userPassword =  userPassword)
         if (userEmail.text.toString().isEmpty()) {
             return
         }

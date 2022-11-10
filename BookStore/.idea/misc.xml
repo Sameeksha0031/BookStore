@@ -8,14 +8,20 @@
         <entry key="..\:/Users/aszkv/AndroidStudioProjects/Bookstore/app/src/main/res/drawable/custom_image.xml" value="0.155" />
         <entry key="..\:/Users/aszkv/AndroidStudioProjects/Bookstore/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.155" />
         <entry key="..\:/Users/aszkv/AndroidStudioProjects/Bookstore/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.155" />
+        <entry key="..\:/Users/aszkv/AndroidStudioProjects/Bookstore/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1325" />
+        <entry key="..\:/Users/aszkv/AndroidStudioProjects/Bookstore/app/src/main/res/drawable/logo_in_toolbar.xml" value="0.1325" />
+        <entry key="..\:/Users/aszkv/AndroidStudioProjects/Bookstore/app/src/main/res/layout/activity_book.xml" value="0.2341485507246377" />
         <entry key="..\:/Users/aszkv/AndroidStudioProjects/Bookstore/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/aszkv/AndroidStudioProjects/Bookstore/app/src/main/res/layout/forgot_password.xml" value="0.1" />
+        <entry key="..\:/Users/aszkv/AndroidStudioProjects/Bookstore/app/src/main/res/layout/fragment_book.xml" value="0.2341485507246377" />
         <entry key="..\:/Users/aszkv/AndroidStudioProjects/Bookstore/app/src/main/res/layout/fragment_login.xml" value="0.18333333333333332" />
         <entry key="..\:/Users/aszkv/AndroidStudioProjects/Bookstore/app/src/main/res/layout/fragment_registration.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/aszkv/AndroidStudioProjects/Bookstore/app/src/main/res/menu/menus_in_toolbar.xml" value="0.2" />
         <entry key="..\:/Users/aszkv/AndroidStudioProjects/Bookstore/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1825" />
       </map>
     </option>
   </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
