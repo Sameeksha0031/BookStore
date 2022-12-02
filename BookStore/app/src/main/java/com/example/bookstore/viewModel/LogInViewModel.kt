@@ -9,8 +9,10 @@ import com.example.bookstore.model.UserService
 class LogInViewModel(val userService: UserService) {
     var _UserLogin = MutableLiveData<UserListener>()
     var _ForgotPassword = MutableLiveData<UserListener>()
+    var _NativeUser  = MutableLiveData<UserListener>()
     val userLogin = _UserLogin as LiveData<UserListener>
     val forgotPwd = _ForgotPassword as LiveData<UserListener>
+    val nativeUser = _NativeUser as LiveData<UserListener>
 
     fun loginUser(user: User){
         userService.userLogin(user){
@@ -24,6 +26,14 @@ class LogInViewModel(val userService: UserService) {
         userService.userForgotPassword(user){
             if(it.status){
                 _ForgotPassword.value = it
+            }
+        }
+    }
+
+    fun userAlreadyLogin(){
+        userService.checkingForUserStatus {
+            if(it.status){
+                _NativeUser.value = it
             }
         }
     }

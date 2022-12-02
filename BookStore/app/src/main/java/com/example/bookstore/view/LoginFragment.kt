@@ -2,6 +2,7 @@ package com.example.bookstore.view
 
 import android.app.AlertDialog
 import android.content.DialogInterface
+import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
 import androidx.fragment.app.Fragment
@@ -86,12 +87,25 @@ class LoginFragment : Fragment() {
         logInViewModel.userLogin.observe(viewLifecycleOwner, Observer {
             if(it.status){
                 Toast.makeText(context,it.msg, Toast.LENGTH_SHORT).show()
+                var intent = Intent(requireActivity(),BookActivity::class.java)
+                startActivity(intent)
             }else{
                 Toast.makeText(context,"Login Fail",Toast.LENGTH_SHORT).show()
             }
         })
+
     }
 
+    override fun onStart() {
+        super.onStart()
+        logInViewModel.userAlreadyLogin()
+        logInViewModel.nativeUser.observe(viewLifecycleOwner, Observer {
+            if(it.status){
+                var intent = Intent(requireActivity(),BookActivity::class.java)
+                startActivity(intent)
+            }
+        })
+    }
     private fun forgotPassword(userEmail: EditText) {
         var userName = ""
         var userPassword = ""

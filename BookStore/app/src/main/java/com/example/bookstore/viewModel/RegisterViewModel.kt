@@ -11,8 +11,8 @@ class RegisterViewModel(val userService: UserService) : ViewModel() {
     var _RegisterUser = MutableLiveData<UserListener>()
     var registerUser = _RegisterUser as LiveData<UserListener>
 
-    fun putUser(user: User){
-        userService.userRegistration(user){
+    fun putUserInFirestore(user: User?){
+        userService.userRegistration(user!!){
             _RegisterUser.value = it
             }
         }

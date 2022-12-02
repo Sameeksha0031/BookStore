@@ -38,7 +38,7 @@ class RegistrationFragment : Fragment() {
         var userName = binding.nameInRegistration.text.toString().trim()
         var userEmail = binding.emailInRegistration.text.toString().trim()
         var userPassword  = binding.passwordInRegistration.text.toString().trim()
-        var user = User(userName,userEmail,userPassword)
+        var user = User(userId = "", userName = userName, userEmail = userEmail, userPassword = userPassword)
         if (userName.isEmpty()) {
             binding.nameInRegistration.error = "Please enter the User Name"
             binding.nameInRegistration .requestFocus()
@@ -67,10 +67,12 @@ class RegistrationFragment : Fragment() {
             binding.confirmPwdInRegistration .requestFocus()
             return
         }
-        registerViewModel.putUser(user)
+        registerViewModel.putUserInFirestore(user)
         registerViewModel.registerUser.observe(viewLifecycleOwner, Observer {
             if(it.status){
                 Toast.makeText(context,it.msg, Toast.LENGTH_SHORT).show()
+                var fragment = LoginFragment()
+                fragmentManager?.beginTransaction()?.replace(R.id.fragment_activity_container,fragment)?.commit()
             }else{
                 Toast.makeText(context,it.msg, Toast.LENGTH_SHORT).show()
             }

@@ -33,12 +33,12 @@ class UserService {
             user.userEmail, user.userPassword
         ).addOnCompleteListener() {
             if (it.isSuccessful) {
-                Log.d(ContentValues.TAG, "Create user successfully")
+                Log.d("user Registration", "Create user successfully")
                 listener(UserListener(true, "user registration successful"))
                 saveFireStore(user)
             } else {
-                Log.d(ContentValues.TAG, "Create user fail")
-                listener(UserListener(true, "user registration Failed"))
+                Log.d("user Registration", "Create user fail")
+                listener(UserListener(false, "user registration Failed"))
             }
         }
     }
@@ -47,15 +47,9 @@ class UserService {
         auth!!.signInWithEmailAndPassword(user.userEmail, user.userPassword).addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 val userLogin = auth.currentUser
-                var updateUser = updateUI(userLogin)
-                //if(updateUser == true){
-                Log.d(ContentValues.TAG, "User Login successfully")
+                updateUI(userLogin)
+                Log.d("Login User", "User Login successfully")
                 listener(UserListener(true, "Login Successful"))
-                //}else{
-                //  Log.d(ContentValues.TAG,"User Login fail")
-                //listener(AuthListener(false,"Login Failed"))
-                //}
-
             } else {
                 Log.d(ContentValues.TAG, "Authentication : Fail", task.exception)
                 listener(UserListener(false, "Login Failed"))

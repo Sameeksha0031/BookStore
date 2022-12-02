@@ -7,6 +7,6 @@ import com.example.bookstore.model.UserService
 
 class RegistrationViewModelFactory(private val userService: UserService) : ViewModelProvider.Factory
 { override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        return LogInViewModel(userService) as T
+        return RegisterViewModel(userService) as T
     }
 }
