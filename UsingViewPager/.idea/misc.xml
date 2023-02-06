@@ -4,12 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/aszkv/AndroidStudioProjects/UsingViewPager/app/src/main/res/drawable/active_dots.xml" value="0.12" />
+        <entry key="..\:/Users/aszkv/AndroidStudioProjects/UsingViewPager/app/src/main/res/drawable/circle.xml" value="0.1215" />
         <entry key="..\:/Users/aszkv/AndroidStudioProjects/UsingViewPager/app/src/main/res/drawable/fghfghfg.xml" value="0.1" />
         <entry key="..\:/Users/aszkv/AndroidStudioProjects/UsingViewPager/app/src/main/res/drawable/ic_launcher_background.xml" value="0.183" />
         <entry key="..\:/Users/aszkv/AndroidStudioProjects/UsingViewPager/app/src/main/res/drawable/inactive_dots.xml" value="0.1" />
         <entry key="..\:/Users/aszkv/AndroidStudioProjects/UsingViewPager/app/src/main/res/drawable/indicator_selector.xml" value="0.1" />
         <entry key="..\:/Users/aszkv/AndroidStudioProjects/UsingViewPager/app/src/main/res/layout/activity_main.xml" value="0.22056159420289856" />
-        <entry key="..\:/Users/aszkv/AndroidStudioProjects/UsingViewPager/app/src/main/res/layout/fragment_first.xml" value="0.1" />
+        <entry key="..\:/Users/aszkv/AndroidStudioProjects/UsingViewPager/app/src/main/res/layout/fragment_first.xml" value="0.2" />
         <entry key="..\:/Users/aszkv/AndroidStudioProjects/UsingViewPager/app/src/main/res/layout/pager_layout.xml" value="0.2" />
       </map>
     </option>

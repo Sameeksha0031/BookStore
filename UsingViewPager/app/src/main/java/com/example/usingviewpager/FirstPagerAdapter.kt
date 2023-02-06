@@ -12,11 +12,13 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.VideoView
+import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.PagerAdapter
+import androidx.viewpager.widget.ViewPager
 import java.util.*
 import kotlin.collections.ArrayList
 
-class FirstPagerAdapter(var context: Context,var itemList : ArrayList<DataContainer>) : PagerAdapter() {
+class FirstPagerAdapter(var context: Context,var itemList : ArrayList<DataContainer>,var viewPager: ViewPager) : PagerAdapter() {
 
     override fun getCount(): Int {
        return itemList.size
@@ -41,10 +43,18 @@ class FirstPagerAdapter(var context: Context,var itemList : ArrayList<DataContai
         val txtView : TextView = item_view.findViewById(R.id.text_holder)
         txtView.text = holder.surge_des
         container.addView(item_view)
+        if(position == itemList.size - 1){
+            viewPager.post(runnable)
+        }
         return item_view
     }
 
     override fun destroyItem(container: ViewGroup, position: Int, `object`: Any) {
         container.removeView(`object` as LinearLayout)
+    }
+
+    private val runnable = Runnable{
+        itemList.addAll(itemList)
+        notifyDataSetChanged()
     }
 }
